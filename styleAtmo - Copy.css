@@ -1,0 +1,158 @@
+/*--ATMO--*/
+
+body{
+    background-image: url(img/atmo/background.png);
+    background-color: #020000;
+    background-position: center top;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+    background-size: cover;
+
+    padding:0;
+    margin:0;
+}
+
+#navbar {
+    background-color: #03031b;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navbar a {
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: block;
+    padding: 20px 20px ;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Agrandir;
+  }
+  
+  #navbar a:hover {
+    background-color: #0f2b41;
+  }
+
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.mainTable{
+    font-family: Agrandir;
+    text-align: center;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 15pt;
+    text-shadow: 2px 2px 8px #000000;
+
+
+    padding: 30px;
+    margin:-18px;
+ }
+
+ .refTable{
+    font-family: Agrandir;
+    text-align: left;
+    font-weight: normal;
+    color: #9db074;
+    font-size: 12pt;
+    text-shadow: 2px 2px 8px #000000;
+
+    background-image: linear-gradient(#ffffff00, #485b20, #485b20, #485b20);
+    
+    padding: 10px 20px;
+
+ }
+
+.goback{
+    width: 150px;
+    opacity: 20%;
+    z-index: 1;
+    position: absolute;
+    margin: 10px;
+}
+
+.fitToScreen{
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+    position: relative;
+
+}
+
+/*.bgimg{
+    z-index: -1;
+    position: absolute;
+}
+
+.sattelite-1{
+    top: 200px;
+    left: 100px;
+
+    width: 450px; 
+}
+*/
+
+/*text specifications*/
+
+@font-face {
+    font-family: "Chloe";
+    src: url(fonts/Chloe-Regular.otf);
+}
+
+@font-face {
+    font-family: "Agrandir";
+    src: url(fonts/Agrandir-WideLight.otf);
+}
+
+@font-face {
+    font-family: "Lovelo";
+    src: url(fonts/Lovelo\ Black.otf);
+}
+
+p{
+    text-shadow: 1px 1px 3px #020000;
+}
+
+h3{
+    text-shadow: 1px 1px 2px #020000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.headerTitle{
+    font-size: 140pt;
+    color: #ffffff;
+    margin-top: -180px;
+    margin-bottom: -10px;
+    font-family: "Chloe";
+    text-shadow: 2px 2px 8px #020000;
+}
+
+.sectionTitle{
+    font-family: "Lovelo";
+    font-size: 70pt;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 8px #020000;
+}

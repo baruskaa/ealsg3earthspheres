@@ -1,0 +1,192 @@
+/*--HOMEPAGE--*/
+
+body{
+  background-image: url(img/main/background.png);
+
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+    width: 640px;
+    min-height: 640px;
+    margin: 25px auto;
+    
+    position: relative;
+    z-index: 1;
+
+    animation: fadeforward 1s ease 0s 1 normal forwards;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+  }
+  
+  .area {
+    width: 320px;
+    height: 320px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .area-1 {
+    background-color: #ffffff00;
+    border-top-left-radius: 100%;
+  }
+  
+  .area-2 {
+    background-color: #ffffff00;
+    border-top-right-radius: 100%;
+  }
+  
+  .area-3 {
+    background-color: #ffffff00;
+    border-bottom-left-radius: 100%;
+  }
+  
+  .area-4 {
+    background-color: #ffffff00;
+    border-bottom-right-radius: 100%;
+  }
+  
+  .trigger {
+    background-color: #ffffff00;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 3;
+    
+    top: 20%;
+    left: 20%;
+
+    width: 400px;
+    height: 400px;
+
+  }
+
+  .hatdog{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .earth{
+    margin: 0 auto;
+  height: 250px;
+  animation: fadetop 2s ease 0s 1 normal forwards;
+  }
+  
+  .and{
+    position: absolute;
+    z-index: -1;
+    height: 40px;
+    margin: 50px auto;
+    left: 280px;
+    animation: fadeleft 2s ease 0s 1 normal forwards;
+  }
+
+  .its{
+    position: absolute;
+    z-index: -1;
+    height: 40px;
+    margin: 50px auto;
+    right: 300px;
+    animation: faderight 2s ease 0s 1 normal forwards;
+  }
+
+  .spheres{
+    margin: 120px auto;
+    height: 250px;
+    animation: fadetbtm 2s ease 0s 1 normal forwards;
+  }
+
+  .info{
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    right: 20px;
+    opacity: 0.3;
+  }
+
+  /* hover & hide*/
+  
+  .hide {
+    display : none;
+  }
+  .area:hover{
+    transform:scale(1.1);
+  }
+
+
+  /*keyframes*/
+
+@keyframes fadetop {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+  
+@keyframes fadetbtm {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes faderight {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeleft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeforward {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
