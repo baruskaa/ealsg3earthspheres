@@ -1,0 +1,227 @@
+body{
+  overflow: hidden;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: system-ui;
+    background: url(img/main/background.png);
+    background-color: #000000;
+  }
+  
+  .visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  .container {
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 2em;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+  
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height:  300px;
+    position: absolute;
+    margin: 0 auto;
+    color: #131726;
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .card:nth-of-type(5) .image-container {
+      background-image: url("img/about/marvilla.jpg");
+  }
+   
+  .card:nth-of-type(6) .image-container {
+    background-image: url("img/about/rosal.jpg")
+  }
+  
+  .card:nth-of-type(7) .image-container {
+    background-image: url("img/about/castillo.jpg")
+  }
+  .card:nth-of-type(8) .image-container {
+    background-image: url("img/about/vargas.jpg")
+  }
+  .card:nth-of-type(9) .image-container {
+    background-image: url("img/about/mainot.jpg")
+  }
+  .card:nth-of-type(1) .image-container {
+    background-image: url("img/about/zamora.png")
+  }
+  .card:nth-of-type(2) .image-container {
+    background-image: url("img/about/dacula.jpg")
+  }
+  .card:nth-of-type(3) .image-container {
+    background-image: url("img/about/lajom.png")
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("img/about/niel.jpg")
+  }
+  
+  
+  
+  
+  
+  .image-container {
+    width: 8em;
+    height: 8em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 100%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    
+  }
+  
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    border: solid 3px #13172683;
+    border-radius: 100%;
+    position: absolute;
+    top: calc(-10% - 3px);
+    left: calc(-10% - 3px);
+  }
+  
+  h2 {
+    padding: 1em;
+    margin-top: 1em;
+    background: rgba(0,0,0,.3);
+    text-align: center;
+    color: white;
+    border-radius: .2em;
+    display: inline-block;
+    transform: translateX(calc((100vw - 100%) / 2))
+  }
+  
+  h2 a {
+    color: #f5b916
+  }
+
+  .goback{
+    width: 150px;
+    opacity: 20%;
+    z-index: 1;
+    position: absolute;
+    margin: 10px;
+}
+
+.meet{
+    font-size: 40pt;
+    color: #ffffff;
+    font-family: "Lovelo";
+    margin-bottom: -40px;
+    margin-top: 0;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.meet2{
+    font-size: 40pt;
+    color: #ffffff;
+    font-family: "Lovelo";
+    margin-bottom: 0;
+    margin-top: 0;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+
+.headerTitle{
+    font-size: 60pt;
+    color: #ffffff;
+    font-family: "Lovelo";
+    margin-bottom: -10px;
+    margin-top: 10px;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.contents{
+    text-align: center;
+    margin-right:auto;
+    overflow: hidden;
+    width: 800px;
+    max-width: 1920px;
+    padding: 25px;
+    margin-left:auto;
+    text-shadow: 2px 2px 8px #000000;
+    font-family: Agrandir;
+    color: #ffffff;
+    font-size: 15pt;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+ }
+
+ @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,287 @@
+/*--LITHIO--*/
+
+body{
+    background-color: #006FAD;
+    background-image: url("img/hydro/background.jpg");
+    background-position: center top;
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    padding:0;
+    margin:0;
+}
+
+#navbar {
+   background-color: #0e539c;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ #navbar a {
+   width: 250px;
+   margin-left: 100px;
+   margin-right: 100px;
+
+   display: block;
+   padding: 20px 20px ;
+
+   text-decoration: none;
+   color: #e1f7ff;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+   font-family: Agrandir;
+ }
+ 
+ #navbar a:hover {
+   background-color: #2d89be;
+ }
+
+ .content {
+   padding: 16px;
+ }
+ 
+ .sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+ }
+ 
+ .sticky + .content {
+   padding-top: 60px;
+ }
+
+ .mainDiv{
+    font-family: Agrandir;
+    text-align: center;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 15pt;
+    text-shadow: 2px 2px 8px #000000;
+
+    padding: 30px;
+    margin:-18px;
+ }
+
+ .intro{
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1920px;
+    font-size: 15pt;
+    margin-top: 50px;
+ }
+
+
+ .components{
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    height: 250px;
+    padding: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -10;
+    margin-bottom: -10;
+ }
+
+ .tectonicPlates{
+    max-width: 1920px;
+    padding: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-left:auto;
+    margin-right:auto
+ }
+
+ .tectonicPlates2{
+    max-width: 1920px;
+    padding: 40px;
+    padding-bottom: 0;
+    margin-left:auto;
+    margin-right:auto
+ }
+
+ .contentsRight{
+    text-align: right;
+    padding: 10px;
+    margin-left:auto;
+    overflow: hidden;
+    width: 1000px;
+ }
+
+ .contentsCenter{
+   text-align: center;
+   padding: 0;
+   margin-right:auto;
+   overflow: hidden;
+   width: 800px;
+}
+
+ .contentsLeft{
+    text-align: left;
+    padding: 10px;
+    margin-right:auto;
+    overflow: hidden;
+    width: 1000px;
+ }
+
+ .contentsLeftCycle{
+   text-align: left;
+   padding: 10px;
+   margin-right:auto;
+   overflow: hidden;
+   width: 600px;
+}
+
+.contentsLeftCycle2{
+   text-align: left;
+   padding: 10px;
+   margin-right:auto;
+   overflow: hidden;
+   width: 800px;
+}
+
+.alignCenter{
+    margin-left:auto;
+    margin-right:auto
+
+}
+
+ .atmospheric{
+    background-image: url(img/hydro/atmospheric.jpg);
+    padding-top: 60px;
+ }
+
+ .surface{
+    background-image: url(img/hydro/surface.jpg);
+    padding-top: 0;
+ }
+
+ .ground{
+    background-image: url(img/hydro/ground.jpg);
+    padding-top: 0;
+ }
+
+
+ table{
+   margin-left:auto;
+    margin-right:auto
+ }
+
+ td{
+   padding: -50px;
+   margin-bottom: 50px;
+   
+ }
+
+ .platespic{
+   width: 500px;
+   margin: 20px;
+ }
+
+ .boundaries{
+   width: 400px;
+   margin-left:150px;
+   margin-top: 20px;
+   
+ }
+
+ .refTable{
+    font-family: Agrandir;
+    text-align: left;
+    font-weight: normal;
+    color: #e1f7ffb9;
+    font-size: 12pt;
+    text-shadow: 2px 2px 8px #000000;
+ 
+    background-color: #074d769a;
+    padding: 10px 20px;
+ 
+    max-width: 1920px;
+    margin-left:auto;
+    margin-right:auto
+ }
+/*image specifications*/
+
+.fitToScreen{
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.goback{
+    width: 150px;
+    opacity: 70%;
+    z-index: 1;
+    position: absolute;
+    margin: 10px;
+}
+
+
+/*text specifications*/
+
+@font-face {
+    font-family: "Chloe";
+    src: url(fonts/Chloe-Regular.otf);
+}
+
+@font-face {
+    font-family: "Agrandir";
+    src: url(fonts/Agrandir-WideLight.otf);
+}
+
+@font-face {
+    font-family: "Lovelo";
+    src: url(fonts/Lovelo\ Black.otf);
+}
+
+p{
+    text-shadow: 2px 2px 8px #000000;
+}
+
+h1{
+    color: #e1f7ff;
+}
+
+.h1{
+   margin-bottom: -10px;
+}
+
+h2{
+   font-family: "Lovelo";
+    font-size: 70pt;
+    color: #e1f7ff;
+    margin-top: -10px;
+    margin-bottom: 0;
+    line-height: 93px;
+
+}
+
+.headerTitle{
+    font-size: 140pt;
+    color: #f0fbff;
+    margin-top: -180px;
+    font-family: "Chloe";
+    margin-bottom: -10px;
+}
+
+.sectionTitle{
+    font-family: "Lovelo";
+    font-size: 70pt;
+    color: #e1f7ff;
+    margin-top: 0;
+    margin-bottom: -60px;
+    line-height: 80px;
+}
+
+.sectionTitleBoundaries{
+    font-family: "Lovelo";
+    font-size: 70pt;
+    color: #e1f7ff;
+    margin-bottom: 0;
+ }

@@ -1,0 +1,154 @@
+/*--ATMO--*/
+
+body{
+    background-image: url(img/atmo/background.jpg);
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: cover;
+
+    padding:0;
+    margin:0;
+}
+
+ #navbar ul{
+    list-style: none;
+    background: #03031b;
+    padding: 0;
+    margin-top: -194px;
+    text-align: center;
+ }
+
+ #navbar li{
+    display: inline-block;
+ }
+
+ #navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    width: 240px;
+    display: block;
+    padding: 20px 20px ;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Agrandir;
+ }
+
+ #navbar a:hover{
+    background: #0f2b41;
+ }
+
+.mainTable{
+    font-family: Agrandir;
+    text-align: center;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 15pt;
+    text-shadow: 2px 2px 8px #000000;
+
+
+    padding: 30px;
+    margin:-18px;
+ }
+
+ .refTable{
+    font-family: Agrandir;
+    text-align: left;
+    font-weight: normal;
+    color: #A7AD9A;
+    font-size: 12pt;
+    text-shadow: 2px 2px 8px #000000;
+
+    background-color: #485B20;
+    padding: 10px 20px;
+
+
+ }
+
+ /* Page content */
+.content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+/*image specifications*/
+
+.goback{
+    width: 150px;
+    opacity: 20%;
+    z-index: 1;
+    position: absolute;
+    margin: 10px;
+}
+
+.fitToScreen{
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+    position: relative;
+
+}
+
+/*.bgimg{
+    z-index: -1;
+    position: absolute;
+}
+
+.sattelite-1{
+    top: 200px;
+    left: 100px;
+
+    width: 450px; 
+}
+*/
+
+/*text specifications*/
+
+@font-face {
+    font-family: "Chloe";
+    src: url(fonts/Chloe-Regular.otf);
+}
+
+@font-face {
+    font-family: "Agrandir";
+    src: url(fonts/Agrandir-WideLight.otf);
+}
+
+@font-face {
+    font-family: "Lovelo";
+    src: url(fonts/Lovelo\ Black.otf);
+}
+
+p{
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.headerTitle{
+    font-size: 140pt;
+    color: #ffffff;
+    margin-top: -180px;
+    font-family: "Chloe";
+}
+
+.sectionTitle{
+    font-family: "Lovelo";
+    font-size: 70pt;
+    line-height: 0;
+    margin: 0;
+}
